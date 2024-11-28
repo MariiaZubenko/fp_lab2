@@ -6,10 +6,10 @@
                      (list (car lst))
                      (list (car lst) temp)))))
 
-(defun check-compress-list (name input expected)
-  "Execute `compress-list' on `input', compare result with `expected' and print comparison status"
+(defun check-reverse-and-nest-tail (name input expected)
+  "Execute `reverse-and-nest-tail' on `input', compare result with `expected' and print comparison status"
   (format t "~:[FAILED~;passed~]... ~a~%"
-          (equal (compress-list input) expected)
+          (equal (reverse-and-nest-tail input) expected)
           name))
 
 (defun test-reverse-and-nest-tail ()
